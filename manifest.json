@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Xray",
+  "version": "1.0.0",
+  "description": "Toggle a debug overlay that outlines every element on the active tab.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Toggle Xray"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
