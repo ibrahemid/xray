@@ -8,9 +8,9 @@ Based on [debug.css](https://github.com/zaydek/debug.css) by Zaydek.
 
 ## Install
 
-- [Chrome Web Store](https://chromewebstore.google.com/detail/xray/hhjeldidbpndgbkhlkekngfjmoedemnk)
-  — installs on Chrome, Arc, Brave, Edge, Vivaldi, Opera, and other Chromium
-  browsers.
+[Chrome Web Store](https://chromewebstore.google.com/detail/xray/hhjeldidbpndgbkhlkekngfjmoedemnk)
+— installs on Chrome, Arc, Brave, Edge, Vivaldi, Opera, and other Chromium
+browsers.
 
 ## Install from source
 
@@ -19,22 +19,13 @@ git clone https://github.com/ibrahemid/xray
 ```
 
 Open `chrome://extensions`, enable Developer mode, click **Load unpacked**,
-and select the cloned directory.
+and select the `extension/` directory.
 
-## Build
+## Layout
 
-PNG icons are generated from `icons/icon.svg`:
-
-```sh
-for s in 16 48 128; do
-  rsvg-convert -w $s -h $s icons/icon.svg -o icons/icon$s.png
-done
 ```
-
-To produce a Web Store-ready zip:
-
-```sh
-zip -r xray.zip manifest.json background.js LICENSE README.md icons/icon*.png
+extension/   Manifest v3 extension.
+site/        Landing page at https://xray.ibrahemid.com.
 ```
 
 ## License

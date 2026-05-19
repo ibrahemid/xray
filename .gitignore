@@ -1,2 +1,16 @@
 .DS_Store
 *.zip
+
+# site
+site/node_modules/
+site/dist/
+site/.astro/
+site/.wrangler/
+
+# stale snapshot (pre-rename), not tracked
+/xray/
+
+# store assets (one-time uploads, not source)
+/store-screenshots/
+/store-promo/
+
